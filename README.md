@@ -8,7 +8,7 @@ TraceOps helps a small ecommerce operations team investigate delayed orders acro
 
 Source: https://github.com/aggravating08/traceops-team-alpha
 
-Public browser sample: https://aggravating08.github.io/traceops-team-alpha/ (deployment pending until GitHub Pages finishes). The public demo computes fictional data in the browser and keeps history in browser storage. It makes no Zetaris or model calls. Use the Python app below for server-side snapshots and live adapters.
+Public browser sample: https://aggravating08.github.io/traceops-team-alpha/. The public demo computes fictional data in the browser and keeps history in browser storage. It makes no Zetaris or model calls. Use the Python app below for server-side snapshots and live adapters.
 
 ## Run locally
 
@@ -150,8 +150,18 @@ Official submission deadline: **October 27, 2026, 23:45 UTC / October 28, 2026, 
 
 ## Team handoff files
 
-The editable pitch deck is `output/TraceOps-Team-ALPHA.pptx`. Update its live-verification disclosures after successful sponsor runs. Synthetic example evidence is in `docs/evidence/`. Five named tasks were created on the Team ALPHA board; the app includes the team playbook.
+The editable pitch deck is `output/TraceOps-Team-ALPHA-v2.pptx`. Update its live-verification disclosures after successful sponsor runs. Synthetic example evidence is in `docs/evidence/`. Five named tasks were created on the Team ALPHA board; the app includes the team playbook.
 
 ## Public browser sample build
 
 Run `python3 scripts/build_demo.py` to regenerate `docs/demo/` from the UI and fixtures. GitHub Pages serves the `docs/` directory. The browser sample has its own explicitly labelled runtime and no provider credentials. With Node 22+ available, run `node tests/browser-sample.test.mjs` for seven acceptance checks. Python sample and live modes remain the primary runtime.
+
+## Submission materials
+
+- Editable deck: `output/TraceOps-Team-ALPHA-v2.pptx`
+- Narrated sample walkthrough: `output/TraceOps-Walkthrough.mp4` (3 minutes 39 seconds)
+- Public video: https://aggravating08.github.io/traceops-team-alpha/demo/walkthrough.mp4
+- Transcript: `docs/video-transcript.md`
+- Connection readiness: `python3 scripts/check_connections.py` (prints missing variable names, never secret values). Add `--live` only when you want real source reads and a model test.
+
+The walkthrough uses captured sample-app views with synthetic narration. Live sponsor verification remains pending, so it is a reviewable demo draft rather than evidence of a live sponsor run.

@@ -63,3 +63,12 @@ Validate usefulness with operations users, deploy with authentication and quotas
 - [ ] Verify confirmation before October 27, 2026, 23:45 UTC.
 
 The current bundle is a working local project and submission preparation package. It is not an already submitted or eligibility-verified entry.
+
+## Verified handoff links (October 27)
+
+- Source: https://github.com/aggravating08/traceops-team-alpha
+- Browser sample: https://aggravating08.github.io/traceops-team-alpha/demo/
+- Walkthrough video: https://aggravating08.github.io/traceops-team-alpha/demo/walkthrough.mp4
+- Editable deck: https://github.com/aggravating08/traceops-team-alpha/blob/main/output/TraceOps-Team-ALPHA-v2.pptx
+
+The public demo and narrated video show sample mode only. Neither proves live Zetaris or model usage. A final submission must keep these disclosures and must not describe the outstanding integration as completed.

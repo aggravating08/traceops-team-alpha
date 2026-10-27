@@ -19,3 +19,7 @@ for table in ('orders','inventory','tickets'):
 (ROOT/'docs'/'index.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta http-equiv="refresh" content="0; url=./demo/"><title>TraceOps</title><a href="./demo/">Open TraceOps browser sample</a></html>')
 (ROOT/'docs'/'.nojekyll').touch()
 print(TARGET)
+
+video=ROOT/'output'/'TraceOps-Walkthrough.mp4'
+if video.exists():
+    shutil.copyfile(video,TARGET/'walkthrough.mp4')

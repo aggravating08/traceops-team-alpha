@@ -16,3 +16,7 @@ Live Zetaris connectivity and live model inference are unverified. Source connec
 - JavaScript syntax check passed with the bundled Node runtime.
 - Editable seven-slide PPTX passed package, font, layout and re-import checks. All seven slide previews were visually inspected. Native PowerPoint execution was not tested.
 - Five named tasks were created and assigned on the real Team ALPHA board (19 total tasks including 14 starters).
+
+## October 27 completion pass
+
+Public source repository published. Public browser sample deployed via GitHub Pages, with a successful hosted North investigation: 5 reviewed, 4 delayed, 30 units and $3,600 exposure. Seven browser-runner acceptance checks pass in addition to 14 Python tests. A 219.403-second H.264/AAC walkthrough uses captured app views and synthetic narration. Its audio has nonzero signal. The revised eight-slide deck passed package/layout/font/re-import checks. Live connection readiness reports missing configuration for Zetaris and model access. No live provider calls were made.
