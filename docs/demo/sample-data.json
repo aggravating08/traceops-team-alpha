@@ -1,0 +1,209 @@
+{
+  "orders": [
+    {
+      "order_id": "ORD-1041",
+      "customer": "Northstar Studio",
+      "region": "North",
+      "sku": "KB-01",
+      "quantity": "8",
+      "order_value": "960",
+      "status": "delayed",
+      "promised_date": "2026-10-24",
+      "updated_at": "2026-10-26T08:00:00Z"
+    },
+    {
+      "order_id": "ORD-1042",
+      "customer": "Orbit Design",
+      "region": "North",
+      "sku": "KB-01",
+      "quantity": "5",
+      "order_value": "600",
+      "status": "delayed",
+      "promised_date": "2026-10-25",
+      "updated_at": "2026-10-26T08:00:00Z"
+    },
+    {
+      "order_id": "ORD-1043",
+      "customer": "Fieldwork Co",
+      "region": "South",
+      "sku": "MS-02",
+      "quantity": "4",
+      "order_value": "320",
+      "status": "shipped",
+      "promised_date": "2026-10-26",
+      "updated_at": "2026-10-26T08:00:00Z"
+    },
+    {
+      "order_id": "ORD-1044",
+      "customer": "Canvas Labs",
+      "region": "North",
+      "sku": "KB-01",
+      "quantity": "10",
+      "order_value": "1200",
+      "status": "delayed",
+      "promised_date": "2026-10-25",
+      "updated_at": "2026-10-26T08:00:00Z"
+    },
+    {
+      "order_id": "ORD-1045",
+      "customer": "Juniper Works",
+      "region": "West",
+      "sku": "HD-03",
+      "quantity": "3",
+      "order_value": "450",
+      "status": "delayed",
+      "promised_date": "2026-10-24",
+      "updated_at": "2026-10-26T08:00:00Z"
+    },
+    {
+      "order_id": "ORD-1046",
+      "customer": "Sunday Supply",
+      "region": "North",
+      "sku": "MS-02",
+      "quantity": "6",
+      "order_value": "480",
+      "status": "shipped",
+      "promised_date": "2026-10-26",
+      "updated_at": "2026-10-26T08:00:00Z"
+    },
+    {
+      "order_id": "ORD-1047",
+      "customer": "Common Ground",
+      "region": "East",
+      "sku": "KB-01",
+      "quantity": "2",
+      "order_value": "240",
+      "status": "processing",
+      "promised_date": "2026-10-28",
+      "updated_at": "2026-10-26T08:00:00Z"
+    },
+    {
+      "order_id": "ORD-1048",
+      "customer": "Signal House",
+      "region": "South",
+      "sku": "HD-03",
+      "quantity": "2",
+      "order_value": "300",
+      "status": "delayed",
+      "promised_date": "2026-10-25",
+      "updated_at": "2026-10-26T08:00:00Z"
+    },
+    {
+      "order_id": "ORD-1049",
+      "customer": "Morrow Studio",
+      "region": "West",
+      "sku": "MS-02",
+      "quantity": "5",
+      "order_value": "400",
+      "status": "delivered",
+      "promised_date": "2026-10-24",
+      "updated_at": "2026-10-26T08:00:00Z"
+    },
+    {
+      "order_id": "ORD-1050",
+      "customer": "Atlas Office",
+      "region": "North",
+      "sku": "KB-01",
+      "quantity": "7",
+      "order_value": "840",
+      "status": "delayed",
+      "promised_date": "2026-10-25",
+      "updated_at": "2026-10-26T08:00:00Z"
+    },
+    {
+      "order_id": "ORD-1051",
+      "customer": "Little Assembly",
+      "region": "East",
+      "sku": "HD-03",
+      "quantity": "4",
+      "order_value": "600",
+      "status": "shipped",
+      "promised_date": "2026-10-26",
+      "updated_at": "2026-10-26T08:00:00Z"
+    },
+    {
+      "order_id": "ORD-1052",
+      "customer": "Forma Works",
+      "region": "South",
+      "sku": "MS-02",
+      "quantity": "3",
+      "order_value": "240",
+      "status": "delivered",
+      "promised_date": "2026-10-24",
+      "updated_at": "2026-10-26T08:00:00Z"
+    }
+  ],
+  "inventory": [
+    {
+      "sku": "KB-01",
+      "product": "Studio Keyboard",
+      "warehouse": "North",
+      "available_units": "0",
+      "inbound_date": "2026-10-29",
+      "inbound_status": "supplier_delayed",
+      "updated_at": "2026-10-26T07:30:00Z"
+    },
+    {
+      "sku": "MS-02",
+      "product": "Precision Mouse",
+      "warehouse": "South",
+      "available_units": "80",
+      "inbound_date": "2026-10-27",
+      "inbound_status": "on_schedule",
+      "updated_at": "2026-10-26T07:30:00Z"
+    },
+    {
+      "sku": "HD-03",
+      "product": "USB-C Hub",
+      "warehouse": "West",
+      "available_units": "25",
+      "inbound_date": "2026-10-27",
+      "inbound_status": "on_schedule",
+      "updated_at": "2026-10-26T07:30:00Z"
+    }
+  ],
+  "tickets": [
+    {
+      "ticket_id": "TKT-201",
+      "order_id": "ORD-1041",
+      "category": "stock",
+      "message": "Keyboard allocation failed; supplier shipment moved to October 29.",
+      "updated_at": "2026-10-26T09:00:00Z"
+    },
+    {
+      "ticket_id": "TKT-202",
+      "order_id": "ORD-1042",
+      "category": "stock",
+      "message": "Warehouse has no KB-01 stock; waiting for replenishment.",
+      "updated_at": "2026-10-26T09:00:00Z"
+    },
+    {
+      "ticket_id": "TKT-203",
+      "order_id": "ORD-1044",
+      "category": "delivery",
+      "message": "Customer requested delivery update; no confirmed dispatch date.",
+      "updated_at": "2026-10-26T09:00:00Z"
+    },
+    {
+      "ticket_id": "TKT-204",
+      "order_id": "ORD-1045",
+      "category": "carrier",
+      "message": "Carrier missed collection; stock is available.",
+      "updated_at": "2026-10-26T09:00:00Z"
+    },
+    {
+      "ticket_id": "TKT-205",
+      "order_id": "ORD-1048",
+      "category": "address",
+      "message": "Delivery address requires confirmation before dispatch.",
+      "updated_at": "2026-10-26T09:00:00Z"
+    },
+    {
+      "ticket_id": "TKT-206",
+      "order_id": "ORD-1050",
+      "category": "stock",
+      "message": "Allocation blocked by KB-01 stock shortage.",
+      "updated_at": "2026-10-26T09:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+ticket_id,order_id,category,message,updated_at
+TKT-201,ORD-1041,stock,Keyboard allocation failed; supplier shipment moved to October 29.,2026-10-26T09:00:00Z
+TKT-202,ORD-1042,stock,Warehouse has no KB-01 stock; waiting for replenishment.,2026-10-26T09:00:00Z
+TKT-203,ORD-1044,delivery,Customer requested delivery update; no confirmed dispatch date.,2026-10-26T09:00:00Z
+TKT-204,ORD-1045,carrier,Carrier missed collection; stock is available.,2026-10-26T09:00:00Z
+TKT-205,ORD-1048,address,Delivery address requires confirmation before dispatch.,2026-10-26T09:00:00Z
+TKT-206,ORD-1050,stock,Allocation blocked by KB-01 stock shortage.,2026-10-26T09:00:00Z

@@ -1,0 +1,4 @@
+sku,product,warehouse,available_units,inbound_date,inbound_status,updated_at
+KB-01,Studio Keyboard,North,0,2026-10-29,supplier_delayed,2026-10-26T07:30:00Z
+MS-02,Precision Mouse,South,80,2026-10-27,on_schedule,2026-10-26T07:30:00Z
+HD-03,USB-C Hub,West,25,2026-10-27,on_schedule,2026-10-26T07:30:00Z

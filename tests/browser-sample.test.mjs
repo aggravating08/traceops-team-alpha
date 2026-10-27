@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import {investigateSample} from '../web/sample-engine.js';
+const sources=JSON.parse(await fs.readFile(new URL('../docs/demo/sample-data.json',import.meta.url)));
+const north=await investigateSample(sources,'Why are North orders delayed?');
+assert.equal(north.metrics.delayed_orders,4);assert.equal(north.metrics.order_value_at_risk,3600);assert.equal(north.metrics.units_affected,30);
+const all=await investigateSample(sources,'Investigate all delayed orders');assert.equal(all.metrics.delayed_orders,6);assert.equal(all.metrics.order_value_at_risk,4350);
+const carrier=await investigateSample(sources,'Why is ORD-1045 delayed?');assert.equal(carrier.findings[0].certainty,'documented');assert.match(carrier.findings[0].explanation,/carrier/);
+const missing=await investigateSample(sources,'Why is ORD-9999 delayed?');assert.equal(missing.findings.length,0);assert.ok(missing.warnings.some(w=>w.includes('No matching')));
+const noCause=structuredClone(sources);noCause.inventory=[];noCause.tickets=[];assert.equal((await investigateSample(noCause,'Why is ORD-1041 delayed?')).findings[0].certainty,'unknown');
+for(const finding of all.findings)assert.ok(finding.citations.every(c=>all.evidence.some(e=>e.citation===c)));
+await assert.rejects(()=>investigateSample(sources,'Tell me about the weather'));
+console.log('Browser sample: 7 acceptance checks passed');

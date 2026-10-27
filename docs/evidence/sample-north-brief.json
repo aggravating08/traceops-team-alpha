@@ -1,0 +1,310 @@
+{
+  "id": "48b92f621aa64699858fa4b83cea048b",
+  "question": "Why are North orders delayed?",
+  "scope": {
+    "order_id": null,
+    "region": "North",
+    "sku": null
+  },
+  "data_mode": "sample",
+  "model_mode": "sample",
+  "metrics": {
+    "orders_reviewed": 5,
+    "delayed_orders": 4,
+    "order_value_at_risk": 3600.0,
+    "units_affected": 30,
+    "currency": "USD",
+    "value_definition": "Sum of delayed order values; exposure, not forecast loss."
+  },
+  "findings": [
+    {
+      "order_id": "ORD-1041",
+      "customer": "Northstar Studio",
+      "sku": "KB-01",
+      "value": 960.0,
+      "explanation": "ORD-1041 is delayed and KB-01 has zero available units at North. Stock shortage is a supported explanation; the causal link is inferred.",
+      "certainty": "corroborated",
+      "citations": [
+        "2c0c14f198636dfd8ed260f4",
+        "8bba24ef621f98cb3d3cd92d",
+        "5a9386d3742b24c6fc0575d0"
+      ]
+    },
+    {
+      "order_id": "ORD-1042",
+      "customer": "Orbit Design",
+      "sku": "KB-01",
+      "value": 600.0,
+      "explanation": "ORD-1042 is delayed and KB-01 has zero available units at North. Stock shortage is a supported explanation; the causal link is inferred.",
+      "certainty": "corroborated",
+      "citations": [
+        "cfbb830be8c51eb8fae2bc9a",
+        "8bba24ef621f98cb3d3cd92d",
+        "dfc59c631313a1439574d99f"
+      ]
+    },
+    {
+      "order_id": "ORD-1044",
+      "customer": "Canvas Labs",
+      "sku": "KB-01",
+      "value": 1200.0,
+      "explanation": "ORD-1044 is delayed and KB-01 has zero available units at North. Stock shortage is a supported explanation; the causal link is inferred.",
+      "certainty": "inferred",
+      "citations": [
+        "d437a1850a543071fd5de2bf",
+        "8bba24ef621f98cb3d3cd92d",
+        "7be6399422a3976b450dedd7"
+      ]
+    },
+    {
+      "order_id": "ORD-1050",
+      "customer": "Atlas Office",
+      "sku": "KB-01",
+      "value": 840.0,
+      "explanation": "ORD-1050 is delayed and KB-01 has zero available units at North. Stock shortage is a supported explanation; the causal link is inferred.",
+      "certainty": "corroborated",
+      "citations": [
+        "292c2ec3c50376dc65784c8f",
+        "8bba24ef621f98cb3d3cd92d",
+        "3807e57b79d056e48a52db88"
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "id": "action-ORD-1041",
+      "order_id": "ORD-1041",
+      "text": "Confirm replenishment for KB-01 with the warehouse and give Northstar Studio a verified dispatch update.",
+      "status": "draft",
+      "citations": [
+        "2c0c14f198636dfd8ed260f4",
+        "8bba24ef621f98cb3d3cd92d",
+        "5a9386d3742b24c6fc0575d0"
+      ],
+      "external_action": false
+    },
+    {
+      "id": "action-ORD-1042",
+      "order_id": "ORD-1042",
+      "text": "Confirm replenishment for KB-01 with the warehouse and give Orbit Design a verified dispatch update.",
+      "status": "draft",
+      "citations": [
+        "cfbb830be8c51eb8fae2bc9a",
+        "8bba24ef621f98cb3d3cd92d",
+        "dfc59c631313a1439574d99f"
+      ],
+      "external_action": false
+    },
+    {
+      "id": "action-ORD-1044",
+      "order_id": "ORD-1044",
+      "text": "Confirm replenishment for KB-01 with the warehouse and give Canvas Labs a verified dispatch update.",
+      "status": "draft",
+      "citations": [
+        "d437a1850a543071fd5de2bf",
+        "8bba24ef621f98cb3d3cd92d",
+        "7be6399422a3976b450dedd7"
+      ],
+      "external_action": false
+    },
+    {
+      "id": "action-ORD-1050",
+      "order_id": "ORD-1050",
+      "text": "Confirm replenishment for KB-01 with the warehouse and give Atlas Office a verified dispatch update.",
+      "status": "draft",
+      "citations": [
+        "292c2ec3c50376dc65784c8f",
+        "8bba24ef621f98cb3d3cd92d",
+        "3807e57b79d056e48a52db88"
+      ],
+      "external_action": false
+    }
+  ],
+  "evidence": [
+    {
+      "citation": "2c0c14f198636dfd8ed260f4",
+      "entity_id": "4d7675d94f144d4712a552a1",
+      "source": "orders",
+      "key": "ORD-1041",
+      "record": {
+        "order_id": "ORD-1041",
+        "customer": "Northstar Studio",
+        "region": "North",
+        "sku": "KB-01",
+        "quantity": "8",
+        "order_value": "960",
+        "status": "delayed",
+        "promised_date": "2026-10-24",
+        "updated_at": "2026-10-26T08:00:00Z"
+      },
+      "selection_reason": "exact run snapshot"
+    },
+    {
+      "citation": "cfbb830be8c51eb8fae2bc9a",
+      "entity_id": "e0458048e992e16d7a70638a",
+      "source": "orders",
+      "key": "ORD-1042",
+      "record": {
+        "order_id": "ORD-1042",
+        "customer": "Orbit Design",
+        "region": "North",
+        "sku": "KB-01",
+        "quantity": "5",
+        "order_value": "600",
+        "status": "delayed",
+        "promised_date": "2026-10-25",
+        "updated_at": "2026-10-26T08:00:00Z"
+      },
+      "selection_reason": "exact run snapshot"
+    },
+    {
+      "citation": "d437a1850a543071fd5de2bf",
+      "entity_id": "97e55a105a989f46eb32b009",
+      "source": "orders",
+      "key": "ORD-1044",
+      "record": {
+        "order_id": "ORD-1044",
+        "customer": "Canvas Labs",
+        "region": "North",
+        "sku": "KB-01",
+        "quantity": "10",
+        "order_value": "1200",
+        "status": "delayed",
+        "promised_date": "2026-10-25",
+        "updated_at": "2026-10-26T08:00:00Z"
+      },
+      "selection_reason": "exact run snapshot"
+    },
+    {
+      "citation": "a6c09fc727b4d47cab1166c2",
+      "entity_id": "060ebb59ac0af3143c9ed96f",
+      "source": "orders",
+      "key": "ORD-1046",
+      "record": {
+        "order_id": "ORD-1046",
+        "customer": "Sunday Supply",
+        "region": "North",
+        "sku": "MS-02",
+        "quantity": "6",
+        "order_value": "480",
+        "status": "shipped",
+        "promised_date": "2026-10-26",
+        "updated_at": "2026-10-26T08:00:00Z"
+      },
+      "selection_reason": "exact run snapshot"
+    },
+    {
+      "citation": "292c2ec3c50376dc65784c8f",
+      "entity_id": "befe9b2c29e81eedcb0a7f72",
+      "source": "orders",
+      "key": "ORD-1050",
+      "record": {
+        "order_id": "ORD-1050",
+        "customer": "Atlas Office",
+        "region": "North",
+        "sku": "KB-01",
+        "quantity": "7",
+        "order_value": "840",
+        "status": "delayed",
+        "promised_date": "2026-10-25",
+        "updated_at": "2026-10-26T08:00:00Z"
+      },
+      "selection_reason": "exact run snapshot"
+    },
+    {
+      "citation": "8bba24ef621f98cb3d3cd92d",
+      "entity_id": "d1d7bb714ea688f0a12b17d7",
+      "source": "inventory",
+      "key": "KB-01",
+      "record": {
+        "sku": "KB-01",
+        "product": "Studio Keyboard",
+        "warehouse": "North",
+        "available_units": "0",
+        "inbound_date": "2026-10-29",
+        "inbound_status": "supplier_delayed",
+        "updated_at": "2026-10-26T07:30:00Z"
+      },
+      "selection_reason": "exact run snapshot"
+    },
+    {
+      "citation": "788561d8ccd310e5a3a86b35",
+      "entity_id": "74befa510de5404fc4c5ea8a",
+      "source": "inventory",
+      "key": "MS-02",
+      "record": {
+        "sku": "MS-02",
+        "product": "Precision Mouse",
+        "warehouse": "South",
+        "available_units": "80",
+        "inbound_date": "2026-10-27",
+        "inbound_status": "on_schedule",
+        "updated_at": "2026-10-26T07:30:00Z"
+      },
+      "selection_reason": "exact run snapshot"
+    },
+    {
+      "citation": "5a9386d3742b24c6fc0575d0",
+      "entity_id": "50c4b3668ab07e7137679682",
+      "source": "tickets",
+      "key": "TKT-201",
+      "record": {
+        "ticket_id": "TKT-201",
+        "order_id": "ORD-1041",
+        "category": "stock",
+        "message": "Keyboard allocation failed; supplier shipment moved to October 29.",
+        "updated_at": "2026-10-26T09:00:00Z"
+      },
+      "selection_reason": "exact run snapshot"
+    },
+    {
+      "citation": "dfc59c631313a1439574d99f",
+      "entity_id": "e29e8a133962a636c5cb169c",
+      "source": "tickets",
+      "key": "TKT-202",
+      "record": {
+        "ticket_id": "TKT-202",
+        "order_id": "ORD-1042",
+        "category": "stock",
+        "message": "Warehouse has no KB-01 stock; waiting for replenishment.",
+        "updated_at": "2026-10-26T09:00:00Z"
+      },
+      "selection_reason": "exact run snapshot"
+    },
+    {
+      "citation": "7be6399422a3976b450dedd7",
+      "entity_id": "0981a3239cfe40455bc0ae3f",
+      "source": "tickets",
+      "key": "TKT-203",
+      "record": {
+        "ticket_id": "TKT-203",
+        "order_id": "ORD-1044",
+        "category": "delivery",
+        "message": "Customer requested delivery update; no confirmed dispatch date.",
+        "updated_at": "2026-10-26T09:00:00Z"
+      },
+      "selection_reason": "exact run snapshot"
+    },
+    {
+      "citation": "3807e57b79d056e48a52db88",
+      "entity_id": "115069bef197d1d1bf4f95ea",
+      "source": "tickets",
+      "key": "TKT-206",
+      "record": {
+        "ticket_id": "TKT-206",
+        "order_id": "ORD-1050",
+        "category": "stock",
+        "message": "Allocation blocked by KB-01 stock shortage.",
+        "updated_at": "2026-10-26T09:00:00Z"
+      },
+      "selection_reason": "exact run snapshot"
+    }
+  ],
+  "narrative": {
+    "text": "Evidence was evaluated by bounded rules. No language model was called.",
+    "usage": {}
+  },
+  "warnings": [],
+  "duration_ms": 12,
+  "engine": "Meterless World Model / minimal reference-architecture implementation"
+}

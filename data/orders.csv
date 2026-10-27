@@ -1,0 +1,13 @@
+order_id,customer,region,sku,quantity,order_value,status,promised_date,updated_at
+ORD-1041,Northstar Studio,North,KB-01,8,960,delayed,2026-10-24,2026-10-26T08:00:00Z
+ORD-1042,Orbit Design,North,KB-01,5,600,delayed,2026-10-25,2026-10-26T08:00:00Z
+ORD-1043,Fieldwork Co,South,MS-02,4,320,shipped,2026-10-26,2026-10-26T08:00:00Z
+ORD-1044,Canvas Labs,North,KB-01,10,1200,delayed,2026-10-25,2026-10-26T08:00:00Z
+ORD-1045,Juniper Works,West,HD-03,3,450,delayed,2026-10-24,2026-10-26T08:00:00Z
+ORD-1046,Sunday Supply,North,MS-02,6,480,shipped,2026-10-26,2026-10-26T08:00:00Z
+ORD-1047,Common Ground,East,KB-01,2,240,processing,2026-10-28,2026-10-26T08:00:00Z
+ORD-1048,Signal House,South,HD-03,2,300,delayed,2026-10-25,2026-10-26T08:00:00Z
+ORD-1049,Morrow Studio,West,MS-02,5,400,delivered,2026-10-24,2026-10-26T08:00:00Z
+ORD-1050,Atlas Office,North,KB-01,7,840,delayed,2026-10-25,2026-10-26T08:00:00Z
+ORD-1051,Little Assembly,East,HD-03,4,600,shipped,2026-10-26,2026-10-26T08:00:00Z
+ORD-1052,Forma Works,South,MS-02,3,240,delivered,2026-10-24,2026-10-26T08:00:00Z
