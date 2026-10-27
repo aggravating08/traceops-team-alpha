@@ -32,7 +32,7 @@ The distinctive use is an exact, immutable evidence snapshot shared by the inves
 
 ## NVIDIA and development tools
 
-An injected OpenAI-compatible generator can use an available NVIDIA Nemotron model through the NVIDIA endpoint. **Current status: adapter prepared, live NVIDIA inference unverified.** State the exact model and contribution only after exercising it. Sample mode uses deterministic rules and makes no model calls.
+An injected OpenAI-compatible generator can use an available NVIDIA Nemotron model through the NVIDIA endpoint. **Current status: adapter prepared, live NVIDIA inference unverified.** State the exact model and contribution only after exercising it. Sample mode uses deterministic rules and makes no model calls. A separate local Qwen2.5:0.5b run through Ollama is now verified on fictional CSV data; see `docs/evidence/local-qwen-run.json`. This is not a verified NVIDIA run or live Zetaris integration.
 
 We used Codex to generate and test the application. Cursor was not used in the work recorded here. No separate AMD project code was reused.
 

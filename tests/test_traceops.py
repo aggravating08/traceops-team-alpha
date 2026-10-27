@@ -148,3 +148,24 @@ class InvestigationTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+class StructuredModelTests(unittest.TestCase):
+    def call(self, content, finish_reason='stop'):
+        with patch.dict(os.environ, {'MODEL_BASE_URL':'http://127.0.0.1:11434/v1', 'MODEL_API_KEY':'local-test', 'MODEL_NAME':'test-model', 'MODEL_RESPONSE_FORMAT':'json_schema'}):
+            with patch('traceops.agent.post_json', return_value={'choices':[{'finish_reason':finish_reason,'message':{'content':json.dumps(content)}}]}) as request:
+                result=LiveGenerator().generate({'scope':{}},[{'explanation':'Order is delayed.','citations':['a'*24]}])
+                return result,request.call_args
+    def test_structured_references_are_validated_and_rendered(self):
+        result,request=self.call({'text':'The order is delayed.','citations':['a'*24]})
+        self.assertIn('['+'a'*24+']',result['text'])
+        self.assertEqual(request.args[1]['response_format']['json_schema']['schema']['properties']['citations']['items']['enum'],['a'*24])
+    def test_structured_unknown_reference_rejected(self):
+        with self.assertRaises(ConnectorError):self.call({'text':'Delayed.','citations':['b'*24]})
+    def test_malformed_inline_reference_rejected(self):
+        with self.assertRaises(ConnectorError):self.call({'text':'Delayed [invented].','citations':['a'*24]})
+    def test_truncated_model_response_rejected(self):
+        with self.assertRaises(ConnectorError):self.call({'text':'Delayed.','citations':['a'*24]},finish_reason='length')
+    def test_oversized_model_narrative_rejected(self):
+        with self.assertRaises(ConnectorError):self.call({'text':'x'*2001,'citations':['a'*24]})
+    def test_missing_reference_rejected(self):
+        with self.assertRaises(ConnectorError):self.call({'text':'Delayed.'})

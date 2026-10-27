@@ -165,3 +165,7 @@ Run `python3 scripts/build_demo.py` to regenerate `docs/demo/` from the UI and f
 - Connection readiness: `python3 scripts/check_connections.py` (prints missing variable names, never secret values). Add `--live` only when you want real source reads and a model test.
 
 The walkthrough uses captured sample-app views with synthetic narration. Live sponsor verification remains pending, so it is a reviewable demo draft rather than evidence of a live sponsor run.
+
+### Verified local model option
+
+Real Qwen2.5:0.5b inference through local Ollama has been exercised on the fictional sample records. See [verification instructions and limitations](docs/verification.md) and [captured runs](docs/evidence/local-qwen-run.json). Live Zetaris and NVIDIA inference remain unverified. The hosted browser demo remains deterministic sample mode.
