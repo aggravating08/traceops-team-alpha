@@ -146,7 +146,7 @@ The included server binds to **127.0.0.1** for a local demo. It has no user auth
 
 Created during the October 22–27, 2026 build window using Codex-generated code. No code from the separate AMD project was reused. Python and browser standard libraries are pre-existing components; there are no added package dependencies. Declare AI assistance and any later reused components in the final submission.
 
-Official submission deadline: **October 27, 2026, 23:45 UTC / October 28, 2026, 04:45 PKT**. [Official event and rules](https://hackathon.genai.works/event/open-agent-hackathon-2026). Both Zetaris and Meterless are mandatory. Code readiness alone is not submission readiness: finish live Zetaris validation, video, slides, repository publication and link checks.
+Official submission deadline: **October 27, 2026, 23:59 UTC / October 28, 2026, 04:59 PKT**. [Official event and rules](https://hackathon.genai.works/event/open-agent-hackathon-2026). Both Zetaris and Meterless are mandatory. Code readiness alone is not submission readiness: finish live Zetaris validation, video, slides, repository publication and link checks.
 
 ## Team handoff files
 

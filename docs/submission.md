@@ -60,7 +60,7 @@ Validate usefulness with operations users, deploy with authentication and quotas
 - [ ] Publish the source repository and verify judge access.
 - [ ] Link repository, video and slides in the team submission form.
 - [ ] Read final form terms and have the team lead submit.
-- [ ] Verify confirmation before October 27, 2026, 23:45 UTC.
+- [ ] Verify confirmation before October 27, 2026, 23:59 UTC.
 
 The current bundle is a working local project and submission preparation package. It is not an already submitted or eligibility-verified entry.
 
